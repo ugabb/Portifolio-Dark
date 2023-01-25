@@ -4,12 +4,13 @@ import Head from "next/head";
 import About from "components/About";
 import Header from "components/Header";
 import Hero from "components/Hero";
-import Projects from "components/Projects";
+import Experiencie from "components/Experience";
 import Skills from "components/Skills";
+import Projects from "components/Projects";
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-scroll z-0">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scrollbar-thin">
       <Head>
         <title>uGab Portifolio 😁</title>
       </Head>
@@ -24,16 +25,17 @@ export default function Home() {
         <About />
       </section>
 
-
       <section className="snap-center" id="experience">
-        <Projects />
+        <Experiencie />
       </section>
 
       <section className="snap-center" id="skills">
         <Skills />
       </section>
-      {/* Projects */}
 
+      <section className="snap-center" id="projects">
+        <Projects />
+      </section>
       {/* Contact Me */}
     </div>
   );
