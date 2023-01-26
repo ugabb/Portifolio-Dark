@@ -29,7 +29,7 @@ const Skill = ({ icon, directionLeft, title }: Props) => {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className=" text-gray-500"
+        className=" text-gray-500 text-center"
       >
         {title}
       </motion.p>

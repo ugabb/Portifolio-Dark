@@ -44,15 +44,10 @@ const About = (props: Props) => {
           <span className="underline decoration-[#f7ab0a]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-sm">
+        <p className="text-sm md:text-base">
           Hi, my name is{" "}
-          <span className="underline decoration-[#f7ab0a]/50"> Gabriel</span>
+          <span className="underline decoration-[#f7ab0a]/50">Gabriel</span>{" "}
           Passionate for Programming and Design. Web Development student. <br />{" "}
-          <span className="underline decoration-[#f7ab0a]/50">Front End</span> -
-          HTML, CSS, React, Tailwind and more
-          <br />{" "}
-          <span className="underline decoration-[#f7ab0a]/50">Back End</span> -
-          NodeJs, Express and MongoDB
         </p>
       </div>
     </motion.div>

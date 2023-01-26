@@ -4,7 +4,7 @@ import Link from "next/link";
 import About from "components/About";
 import Header from "components/Header";
 import Hero from "components/Hero";
-import Experiencie from "components/Experience";
+import Experiencie from "components/Project";
 import Skills from "components/Skills";
 // import Projects from "components/Projects";
 import ContactMe from "components/ContactMe";
@@ -31,7 +31,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section className="snap-center" id="experience">
+      <section className="snap-center" id="projects">
         <Experiencie />
       </section>
 
@@ -42,6 +42,7 @@ export default function Home() {
       {/* <section className="snap-center" id="projects">
         <Projects />
       </section> */}
+
       {/* Contact Me */}
       <section className="snap-center" id="contact">
         <ContactMe />
@@ -52,7 +53,7 @@ export default function Home() {
           initial={{ y: 0 }}
           transition={{ ease: "easeOut", duration: 2 }}
           animate={{ y: -30 }}
-          className="sticky bottom-5 w-full cursor-pointer"
+          className="sticky bottom-5 cursor-pointer"
         >
           <div className="flex items-center justify-center">
             <svg

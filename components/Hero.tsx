@@ -22,6 +22,7 @@ const Hero = (props: Props) => {
       <BackgroundCircles />
       <Image
         src={"/../public/me.jpg"}
+        priority={true}
         width={32}
         height={32}
         alt={"uGabDev picture"}
@@ -42,7 +43,7 @@ const Hero = (props: Props) => {
             <button className="hero-button">About</button>
           </Link>
 
-          <Link href="#experience">
+          <Link href="#projects">
             <button className="hero-button">Projects</button>
           </Link>
           <Link href="#skills">
