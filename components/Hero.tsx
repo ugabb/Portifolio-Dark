@@ -20,8 +20,8 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-8 item-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <Image
-        src={"/../public/me.jpg"}
+      <img
+        src={"../me.jpg"}
         width={32}
         height={32}
         alt={"uGabDev picture"}
@@ -50,6 +50,9 @@ const Hero = (props: Props) => {
           </Link>
           <Link href="#projects">
             <button className="hero-button">Projects</button>
+          </Link>
+          <Link href="#contact">
+            <button className="hero-button">Contact</button>
           </Link>
         </div>
       </div>
