@@ -26,15 +26,15 @@ const Skills = (props: Props) => {
         Hover over a skill for currency proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={true} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
-        <Skill directionLeft={false} />
+      <div className="grid grid-cols-2 gap-10 md:grid-cols-4">
+        <Skill title="React" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" directionLeft={true} />
+        <Skill title="NodeJS" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" directionLeft={true} />
+        <Skill title="Tailwindcss" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" directionLeft={true} />
+        <Skill title="Javascript" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" directionLeft={false} />
+        <Skill title="MongoDB" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" directionLeft={true} />
+        <Skill title="CSS3" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" directionLeft={false} />
+        <Skill title="Git" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" directionLeft={false} />
+        <Skill title="HTML5" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" directionLeft={false} />
       </div>
     </motion.div>
   );

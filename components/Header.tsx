@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { SocialIcon } from "react-social-icons";
+import { AiOutlineTwitter, AiFillGithub,AiOutlineMail } from "react-icons/ai";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -25,21 +27,19 @@ function Header({}: Props) {
         className="flex flex-row items-center"
       >
         {/* Social Icons */}
-        <SocialIcon
-          url="https://twitter.com/uGabDev"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://twitter.com/uGabDev"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://twitter.com/uGabDev"
-          fgColor="gray"
-          bgColor="transparent"
-        />
+
+        <div className="flex gap-5">
+          <Link href="https://www.linkedin.com/in/ugab/" target="_blank">
+            <RiLinkedinBoxFill className="icons" size={30} />
+          </Link>
+          <Link href="https://github.com/ugabb" target="_blank">
+            <AiFillGithub className="icons" size={30} />
+          </Link>
+          <Link href="https://twitter.com/uGabDev" target="_blank">
+            <AiOutlineTwitter className="icons" size={30} />
+          </Link>
+        </div>
+
       </motion.div>
 
       <motion.div
@@ -56,17 +56,17 @@ function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
+        className="flex flex-row items-center gap-3 text-gray-300 cursor-pointer"
       >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
+    
+        <AiOutlineMail className="icons" size={20} />
+
+        <Link
+          className="uppercase hidden md:inline-flex text-sm text-gray-400 "
+          href="#contact"
+        >
           Get in Touch
-        </p>
+        </Link>
       </motion.div>
     </header>
   );
