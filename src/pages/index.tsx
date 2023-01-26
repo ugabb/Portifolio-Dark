@@ -6,7 +6,7 @@ import Header from "components/Header";
 import Hero from "components/Hero";
 import Experiencie from "components/Experience";
 import Skills from "components/Skills";
-import Projects from "components/Projects";
+// import Projects from "components/Projects";
 import ContactMe from "components/ContactMe";
 
 //motion
@@ -20,7 +20,7 @@ export default function Home() {
         <title>uGab Portifolio 😁</title>
       </Head>
       <Mouse />
-      
+
       <Header />
 
       <section id="hero" className="snap-start">
