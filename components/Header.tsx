@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { AiOutlineTwitter, AiFillGithub,AiOutlineMail } from "react-icons/ai";
+import { AiOutlineTwitter, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -39,7 +39,6 @@ function Header({}: Props) {
             <AiOutlineTwitter className="icons" size={30} />
           </Link>
         </div>
-
       </motion.div>
 
       <motion.div
@@ -58,14 +57,11 @@ function Header({}: Props) {
         }}
         className="flex flex-row items-center gap-3 text-gray-300 cursor-pointer"
       >
-    
-        <AiOutlineMail className="icons" size={20} />
-
         <Link
-          className="uppercase hidden md:inline-flex text-sm text-gray-400 "
+          className="uppercase md:inline-flex text-sm text-gray-400 "
           href="#contact"
         >
-          Get in Touch
+          <AiOutlineMail className="icons" size={20} />
         </Link>
       </motion.div>
     </header>

@@ -38,16 +38,16 @@ const About = (props: Props) => {
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
       />
 
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
-          Here is a{" "}
-          <span className="underline decoration-[#f7ab0a]/50">little</span>{" "}
-          background
-        </h4>
-        <p className="text-sm md:text-base">
+      <div className="space-y-10 px-0 md:px-10 ">
+        <h4 className="text-4xl font-semibold">Here is a little about me!</h4>
+        <p className="text-sm md:text-base lg:w-1/2">
           Hi, my name is{" "}
-          <span className="underline decoration-[#f7ab0a]/50">Gabriel</span>{" "}
-          Passionate for Programming and Design. Web Development student. <br />{" "}
+          <span className="underline decoration-[#45c7e5]/50">Gabriel</span>{" "}
+          Passionate for Programming and Design. Computer Science and Web
+          Development student.<br /> I like to craft solid and scalable frontend products with great user experiences.{" "}
+        </p>
+        <p className="text-sm md:text-base lg:w-1/2">
+          I'm from Brazil🟡🟢 and my favorite team is Flamengo ⚫🔴{" "}. I have 21 years old of trying to let the world around me better
         </p>
       </div>
     </motion.div>

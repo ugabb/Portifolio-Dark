@@ -10,9 +10,11 @@ import { Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
-    words: ["Hi, my is Gabriel", "Dev", "Flamengo"],
+    words: ["Hi, my is Gabriel", "Dev","Computer Science"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -20,9 +22,9 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-8 item-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <Image
-        src={"/../public/me.jpg"}
-        priority={true}
+      <motion.img
+      whileHover={{scale:1.2}}
+        src="/me.jpg"
         width={32}
         height={32}
         alt={"uGabDev picture"}
@@ -31,7 +33,7 @@ const Hero = (props: Props) => {
 
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 tracking-[15px]">
-          Softwate Engineer
+          Software Engineer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
           <span className="mr-3">{text}</span>
