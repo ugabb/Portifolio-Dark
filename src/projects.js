@@ -13,6 +13,7 @@ const projects = [
     technology4:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     repo: "https://github.com/ugabb/Todo-App",
+    more:"projects/TodoApp"
   },
   {
     name: "My Portifolio",
@@ -26,6 +27,7 @@ const projects = [
     technology3:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
     repo: "https://github.com/ugabb/Portifolio-Dark",
+    more:"projects/Portifolio"
   },
   {
     name: "Image Generator",
@@ -37,6 +39,7 @@ const projects = [
     technology2:
       "//cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     repo: "https://github.com/ugabb/Image-Generator",
+    more:"projects/ImageGenerator"
   },
 
   {
@@ -51,6 +54,7 @@ const projects = [
     technology3:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     repo: "https://github.com/ugabb/Note-App",
+    more:""
   },
 ];
 

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import projects from "../src/projects";
 
@@ -62,7 +63,7 @@ const ProjectCard = (props: Props) => {
               <p>{project.description}</p>
             </div>
 
-            <div className="flex justify-around w-full ">
+            <div className="flex justify-around w-full">
               <div className="flex flex-col ">
                 <a href={project.repo} target="_blank">
                   <motion.img
@@ -72,12 +73,14 @@ const ProjectCard = (props: Props) => {
                   />
                 </a>
               </div>
-              <motion.button
-                whileHover={{ scale: 1.2 }}
-                className="px-5 border border-[#45c7e5] text-[#45c7e5] hover:text-white hover:bg-[#45c7e5] rounded-xl text-xl"
-              >
-                Know More
-              </motion.button>
+              <Link href={project.more} className="">
+                <motion.button
+                  whileHover={{ scale: 1.2 }}
+                  className="px-5 py-2 border border-[#45c7e5] text-[#45c7e5] hover:text-white hover:bg-[#45c7e5] rounded-xl text-xl"
+                >
+                  Know More
+                </motion.button>
+              </Link>
             </div>
           </div>
         ))}
