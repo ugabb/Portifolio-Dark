@@ -12,7 +12,9 @@ const ProjectCard = (props: Props) => {
 
   useEffect(() => {
     console.log(carousel.current?.scrollWidth);
-    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    if (carousel.current?.scrollWidth && carousel.current?.offsetWidth) {
+      setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    }
   }, []);
 
   return (
