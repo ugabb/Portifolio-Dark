@@ -4,7 +4,7 @@ import Link from "next/link";
 import About from "components/About";
 import Header from "components/Header";
 import Hero from "components/Hero";
-import Experiencie from "components/Project";
+import Project from "components/Project";
 import Skills from "components/Skills";
 // import Projects from "components/Projects";
 import ContactMe from "components/ContactMe";
@@ -22,7 +22,7 @@ export default function Home() {
 
       <div className="hidden lg:block">
 
-      <Mouse />
+        <Mouse />
       </div>
 
       <Header />
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       <section id="projects">
-        <Experiencie />
+        <Project />
       </section>
 
       <section id="skills">
