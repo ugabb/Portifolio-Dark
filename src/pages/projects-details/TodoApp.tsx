@@ -11,9 +11,9 @@ type Props = {};
 
 const TodoApp = (props: Props) => {
   return (
-    <div className="bg-[rgb(36,36,36)] h-full">
+    <div className="h-full">
       <HeaderSecondary />
-      <div className="flex flex-col  items-center ">
+      <div className="flex flex-col  items-center">
         <h1 className="text-3xl mt-20 uppercase  text-gray-400 tracking-[15px]">
           Todo
         </h1>
@@ -35,30 +35,29 @@ const TodoApp = (props: Props) => {
             Filter Tasks
           </li>
         </ul>
-        <p className="w-1/3 text-gray-500 text-center mt-4">
-          {" "}
+        <p className="w-1/3 text-gray-500 mt-4">
           "Full Stack Todo App. Create list of things to do where you can set as
           completed. Filter between task active or completed. Responsive",
         </p>
-        <div className="flex flex-col gap-2 w-2/3 m-5 ">
+        <div className="flex flex-col justify-center items-center gap-2 w-2/3 m-5 ">
           <motion.img
             src="../todo-app.png"
-            className="w-full h-[200px] md:h-[300px] object-cover"
+            className="w-full max-w-3xl h-[200px] md:h-[300px] object-cover"
             whileHover={{
-              scale: 1.3,
+              scale: 1.01,
               boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.4)",
             }}
             whileTap={{ scale: 0.9 }}
           />
         </div>
       </div>
-      <div className="flex flex-col items-center pb-5 w-[360px] md:w-2/3 h-[360px] mx-auto">
+      {/* <div className="flex flex-col items-center pb-5 w-[360px] md:w-2/3 h-[360px] mx-auto">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=oyVwsQpc1pY"
           width="100%"
           height="100%"
         />
-      </div>
+      </div> */}
       <div className="flex flex-col items-center pb-5">
         <Link href="https://github.com/ugabb/Todo-App" target="_blank">
           <AiFillGithub className="icons" size={60} />

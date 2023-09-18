@@ -15,27 +15,31 @@ import Mouse from "components/Mouse";
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#45c7e5]/80 scrollbar-thin">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#45c7e5]/80 scrollbar-thin">
       <Head>
         <title>uGab Portifolio 😁</title>
       </Head>
+
+      <div className="hidden lg:block">
+
       <Mouse />
+      </div>
 
       <Header />
 
-      <section id="hero" className="snap-start">
+      <section id="hero" >
         <Hero />
       </section>
 
-      <section className="snap-center" id="about">
+      <section id="about">
         <About />
       </section>
 
-      <section className="snap-center" id="projects">
+      <section id="projects">
         <Experiencie />
       </section>
 
-      <section className="snap-center" id="skills">
+      <section id="skills">
         <Skills />
       </section>
 
@@ -44,7 +48,7 @@ export default function Home() {
       </section> */}
 
       {/* Contact Me */}
-      <section className="snap-center" id="contact">
+      <section id="contact">
         <ContactMe />
       </section>
 

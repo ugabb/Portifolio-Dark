@@ -52,13 +52,13 @@ const TodoApp = (props: Props) => {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center pb-5 w-[360px] md:w-2/3 h-[360px] mx-auto">
+      {/* <div className="flex flex-col items-center pb-5 w-[360px] md:w-2/3 h-[360px] mx-auto">
         <ReactPlayer
           url="https://www.youtube.com/watch?v=dYcwrul7-Ko&feature=youtu.be"
           width="100%"
           height="100%"
         />
-      </div>
+      </div> */}
       <div className="flex flex-col items-center pb-5">
         <Link href="https://github.com/ugabb/Image-Generator" target="_blank">
           <AiFillGithub className="icons" size={60} />
