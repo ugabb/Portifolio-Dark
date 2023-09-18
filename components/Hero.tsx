@@ -23,7 +23,7 @@ const Hero = (props: Props) => {
     <div className="h-screen flex flex-col space-y-8 item-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <motion.img
-      whileHover={{scale:1.2}}
+      whileHover={{scale:1.1}}
         src="/me.jpg"
         width={32}
         height={32}

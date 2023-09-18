@@ -38,7 +38,7 @@ const ProjectCard = (props: Props) => {
             <div className="w-full h-40 md:h-60 ">
               <motion.img
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.01,
                   boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.4)",
                 }}
                 className="h-full w-full object-cover rounded-xl cursor-pointer"
@@ -69,7 +69,7 @@ const ProjectCard = (props: Props) => {
               <div className="flex flex-col ">
                 <a href={project.repo} target="_blank">
                   <motion.img
-                    whileHover={{ scale: 1.2 }}
+                    whileHover={{ scale: 1.05 }}
                     className="h-12 cursor-pointer"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                   />
@@ -77,7 +77,7 @@ const ProjectCard = (props: Props) => {
               </div>
               <Link href={project.more} className="">
                 <motion.button
-                  whileHover={{ scale: 1.2 }}
+                  whileHover={{ scale: 1.05 }}
                   className="px-5 py-2 border border-[#45c7e5] text-[#45c7e5] hover:text-white hover:bg-[#45c7e5] rounded-xl text-xl"
                 >
                   Know More
