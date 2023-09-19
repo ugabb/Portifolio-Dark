@@ -2,8 +2,11 @@ import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import ContactMeInfo from "./ContactMeInfo";
 
 import { useForm, SubmitHandler } from "react-hook-form";
+import { useRef } from "react";
 
-type Inputs = {
+import emailjs from '@emailjs/browser';
+
+type Email = {
   name: string;
   email: string;
   subject: string;
@@ -13,10 +16,31 @@ type Inputs = {
 type Props = {};
 
 const ContactMe = (props: Props) => {
-  const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:ugabrieldev@gmail.com?subject=${formData.subject}&body=Hi, my name is${formData.name}.${formData.message} (${formData.email})`
+  const { register, handleSubmit } = useForm<Email>();
+  const form = useRef('')
+
+  const onSubmit: SubmitHandler<Email> = (formData) => {
+
+    // window.location.href = `mailto:ugabrieldev@gmail.com?subject=${formData.subject}&body=Hi, my name is${formData.name}.${formData.message} (${formData.email})`
+
+    emailjs
+      .sendForm('service_9fpcwpc', 'template_il1yoen', form.current, '7JQbKxEuJzdHYC57W')
+      .then(
+        res => {
+          console.log(res.text)
+          if (res.text === 'OK') {
+            return (
+              <div className="absolute z-50 mx-auto top-0 left-0">
+                <p className="text-4xl text-emerald-500 ">Email Enviado com sucesso</p>
+              </div>
+            )
+          }
+        },
+        (error) => console.log(error.text)
+      )
   };
+
+
 
   return (
     <div className="h-screen flex relative flex-col text-left md:flex-row max-w-7xl mx-auto px-10 justify-evenly items-center">
@@ -50,7 +74,7 @@ const ContactMe = (props: Props) => {
           />
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit  mx-auto">
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit  mx-auto">
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
             <input {...register("name")} className="contactInput" placeholder="Name" type="text" />
             <input {...register("email")} className="contactInput" placeholder="Email" type="text" />

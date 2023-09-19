@@ -24,7 +24,7 @@ const Project = (props: Props) => {
         Projects
       </h3>
 
-      <motion.div className="w-full h-2/3 flex flex-col justify-center items-center space-x-5">
+      <motion.div className="w-full lg:max-w-7xl h-2/3 flex flex-col justify-center items-center space-x-5">
         {/* <ProjectCard /> */}
         <ProjectList />
       </motion.div>
