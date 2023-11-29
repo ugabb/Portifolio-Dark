@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useFollowPointer } from "./use-follow-pointer";
-import { GiDragonfly } from "react-icons/gi";
+import { PiFlyingSaucerThin  } from "react-icons/pi";
 
 type Props = {};
 
@@ -20,7 +20,7 @@ const Mouse = (props: Props) => {
         restDelta: 0.001,
       }}
     >
-      <GiDragonfly className="w-8 h-8" />
+      <PiFlyingSaucerThin className="w-8 h-8" />
     </motion.div>
   );
 };
