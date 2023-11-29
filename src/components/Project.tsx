@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import ProjectCard from "./ProjectCard";
 import ProjectList from "./ProjectList";
+import ProjectsCard from "./ProjectsCard";
 
 type Props = {};
 
@@ -24,9 +25,12 @@ const Project = (props: Props) => {
         Projects
       </h3>
 
-      <motion.div className="w-full lg:max-w-7xl h-2/3 flex flex-col justify-center items-center space-x-5">
-        {/* <ProjectCard /> */}
-        <ProjectList />
+      <motion.div className="w-full lg:max-w-7xl h-2/3 flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 justify-center items-center">
+        <ProjectsCard />
+        <ProjectsCard />
+        <ProjectsCard />
+        <ProjectsCard />
+        {/* <ProjectList /> */}
       </motion.div>
     </motion.div>
   );

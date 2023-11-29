@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import projects from "../src/projects";
+import projects from "../projects";
 
 type Props = {};
 

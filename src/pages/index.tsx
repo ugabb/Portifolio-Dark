@@ -1,23 +1,23 @@
 import Head from "next/head";
 import Link from "next/link";
 // Components
-import About from "components/About";
-import Header from "components/Header";
-import Hero from "components/Hero";
-import Project from "components/Project";
-import Skills from "components/Skills";
+import About from "@/components/About";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Project from "@/components/Project";
+import Skills from "@/components/Skills";
 // import Projects from "components/Projects";
-import ContactMe from "components/ContactMe";
+import ContactMe from "@/components/ContactMe";
 
 //motion
 import { motion } from "framer-motion";
-import Mouse from "components/Mouse";
+import Mouse from "@/components/Mouse";
 
 export default function Home() {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#45c7e5]/80 scrollbar-thin">
       <Head>
-        <title>uGab Portifolio 😁</title>
+        <title>uGab Portfolio  😁</title>
       </Head>
 
       <div className="hidden lg:block">

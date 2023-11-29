@@ -1,7 +1,7 @@
-import ProjectDetails from "components/ProjectDetails";
+import ProjectDetails from "@/components/ProjectDetails";
 import React from "react";
 
-import HeaderSecondary from "components/HeaderSecondary";
+import HeaderSecondary from "@/components/HeaderSecondary";
 import ReactPlayer from "react-player";
 
 import {AiFillGithub} from 'react-icons/ai'

@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
-    words: ["Hi, my is Gabriel", "Dev","Computer Science"],
+    words: ["Hi, my name is Gabriel", "Dev","Computer Science"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -33,7 +33,7 @@ const Hero = (props: Props) => {
 
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 tracking-[15px]">
-          Software Engineer
+          Developer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
           <span className="mr-3">{text}</span>
