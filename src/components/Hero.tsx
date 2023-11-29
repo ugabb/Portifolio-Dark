@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
           Developer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
-          <span className="mr-3">{text}</span>
+          <span className="mr-3 ">{text}</span>
           <Cursor cursorColor="#45c7e5" />
         </h1>
 

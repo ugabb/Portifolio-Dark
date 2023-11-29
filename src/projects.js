@@ -54,7 +54,7 @@ const projects = [
     technology3:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     repo: "https://github.com/ugabb/Note-App",
-    more:""
+    more:"projects-details/TodoApp"
   },
 ];
 
