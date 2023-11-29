@@ -13,19 +13,58 @@
   font-family: 'Krona One', sans-serif;
 }
 
-.text-wild-world{
+.text-wild-world {
   font-family: 'Wild World', sans-serif;
 }
 
 
-.center{
+.center {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
+.project-border {
+  pointer-events: none;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+}
 
+/* .project-border::before {
+  content: '';
+  position: absolute;
+  width: 700px;
+  height: 120px;
+  background: linear-gradient(#00ccff, #d500f9);
+  animation: rotate 4s linear infinite;
+  border-radius: 16px;
+}
+
+.project-border::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  inset: 5px;
+  border-radius: 16px;
+} */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 @layer components {
   .hero-button {
