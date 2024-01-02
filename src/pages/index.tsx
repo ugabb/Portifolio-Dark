@@ -12,6 +12,7 @@ import ContactMe from "@/components/ContactMe";
 //motion
 import { motion } from "framer-motion";
 import Mouse from "@/components/Mouse";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         <title>uGab Portfolio  😁</title>
       </Head>
 
-      <div className="hidden lg:block">
+      <div className="hidden lg:block w-screen overflow-hidden">
 
         <Mouse />
       </div>

@@ -13,7 +13,7 @@ type Props = {};
 const TodoApp = (props: Props) => {
   return (
     <div className="h-full">
-      <ProjectDetails />
+      {/* <ProjectDetails /> */}
     </div>
   );
 };

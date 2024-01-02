@@ -16,8 +16,12 @@ import { BsCopy } from "react-icons/bs";
 
 import Link from "next/link";
 import ButtonWide from "./ButtonWide";
+import { IProject } from "@/IProjects";
 
-type Props = {};
+type Props = {
+  projectName: string | string[] | undefined;
+  project: IProject | undefined;
+};
 
 const settings = {
   className: "center",
@@ -28,12 +32,12 @@ const settings = {
   speed: 500
 };
 
-const ProjectDetails = ({ }: Props) => {
+const ProjectDetails = ({ projectName, project }: Props) => {
+  console.log({ project })
   return (
     <div className=" space-y-3">
-      <Header />
       <div className="flex flex-col max-w-7xl w-full mx-auto px-5 gap-10">
-        <h1 className="text-4xl  text-left text-krona-one text-gray-400">Note App</h1>
+        <h1 className="text-4xl  text-left text-krona-one text-gray-400 mt-10">{projectName}</h1>
         <Carousel settings={settings}>
           <SwiperSlide >
             <Image className='object-cover' src={'/dev-spotlight.png'} width={640} height={640} alt='' />
@@ -48,15 +52,18 @@ const ProjectDetails = ({ }: Props) => {
 
         <div className="flex flex-col">
           <h2 className="text-2xl  text-left text-krona-one text-gray-400">About</h2>
-          <p className="text-gray-400">An landing page of Twenty one Pilots that shows deeper one of the best bands in the 10s.An landing page of Twenty one Pilots that shows deeper one of the best bands in the 10s.An landing page of Twenty one Pilots that shows deeper one of the best bands in the 10s. An landing page of Twenty one Pilots that shows deeper one of the best bands in the 10s. An land ing page of Twenty one Pilots that shows deeper one of the best bands in the 10s.</p>
+          <p className="text-gray-400">{project?.description}</p>
         </div>
 
         <section className=''>
           <h1 className='text-2xl text-gray-400 font-bold tracking-widest uppercase font-georgeTown '>Technologies</h1>
           <div className="flex gap-3">
-            <TextIcon text={'React'} textColor='gray-400' icon={<FaReact className='text-blue-500' size={20} />} wrap='' />
-            <TextIcon text={'React'} textColor='gray-400' icon={<FaReact className='text-blue-500' size={20} />} wrap='' />
-            <TextIcon text={'React'} textColor='gray-400' icon={<FaReact className='text-blue-500' size={20} />} wrap='' />
+            {project?.technologies.map((tech) => (
+              <div className="flex items-center gap-3">
+                <Image width={30} height={30} alt="technology" src={tech.imageUrl} />
+                <p className="text-gray-400">{tech.name}</p>
+              </div>
+            ))}
           </div>
         </section>
 

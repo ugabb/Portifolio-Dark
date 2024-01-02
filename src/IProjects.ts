@@ -1,11 +1,8 @@
-export interface IProjects {
-    name: string
-    photo: string
-    description: string
-    technology1: string
-    technology2: string
-    technology3?: string
-    technology4?: string
-    repo: string
-    more: string
+export interface IProject {
+    name: string;
+    photo: string;
+    description: string;
+    technologies: string[];
+    repo: string;
+    more: string;
 }

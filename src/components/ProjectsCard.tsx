@@ -46,7 +46,7 @@ const ProjectsCard = ({ photo, name, knowMore }: Props) => {
         </motion.div>
       )}
 
-      <Link href={`/${knowMore}`}>
+      <Link href={`/projects-details/${knowMore}`}>
 
         <motion.div
           onHoverStart={handleProjectShow}

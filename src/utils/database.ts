@@ -1,29 +1,27 @@
-import mongoose from 'mongoose'
+// import mongoose from 'mongoose'
 
-let isConnected = true;
+// let isConnected = false;
 
-const db_uri = 'mongodb+srv://ugabb:ugab@portifolio.j1fg0tr.mongodb.net/?retryWrites=true&w=majority'
+// export const connectToDB = async () => {
+//     mongoose.set('strictQuery', true);
 
-export const connectToDB = async () => {
-    mongoose.set('strictQuery', true);
+//     if (isConnected) {
+//         console.log('Already Connected')
+//         return
+//     };
 
-    if (isConnected) {
-        console.log('Already Connected')
-        return
-    };
+//     try {
+//         await mongoose.connect(process.env.MONGO_URI, {
+//             dbName: "sample_airbnb",
+//             useNewUrlParser: true,
+//             useUnifiedTopology: true,
+//         })
 
-    try {
-        await mongoose.connect(db_uri, {
-            dbName: "portifolio-details",
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        })
+//         isConnected = true
 
-        isConnected = true
+//         console.log('MONGODB CONNECTED')
+//     } catch (error) {
+//         console.error(error)
+//     }
 
-        console.log('MONGODB CONNECTED')
-    } catch (error) {
-
-    }
-
-}
+// }

@@ -6,7 +6,7 @@ type Props = {}
 const NoteApp = (props: Props) => {
   return (
     <div>
-      <ProjectDetails />
+      {/* <ProjectDetails /> */}
     </div>
   )
 }
