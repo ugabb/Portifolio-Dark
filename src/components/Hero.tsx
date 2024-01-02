@@ -40,7 +40,7 @@ const Hero = (props: Props) => {
           <Cursor cursorColor="#45c7e5" />
         </h1>
 
-        <div className="pt-5">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 pt-5">
           <Link href="#about">
             <button className="hero-button">About</button>
           </Link>
