@@ -13,6 +13,7 @@ import ContactMe from "@/components/ContactMe";
 import { motion } from "framer-motion";
 import Mouse from "@/components/Mouse";
 import { usePathname } from "next/navigation";
+import Timeline from "@/components/Vertical Time Line/Timeline";
 
 export default function Home() {
   return (
@@ -38,6 +39,10 @@ export default function Home() {
 
       <section id="projects">
         <Project />
+      </section>
+
+      <section className="my-20">
+        <Timeline />
       </section>
 
       <section id="skills">
