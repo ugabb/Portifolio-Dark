@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
-      'picsum.photos'
+      'picsum.photos',
+      "yt3.googleusercontent.com"
     ]
   }
 }

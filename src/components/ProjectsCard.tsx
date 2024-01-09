@@ -52,7 +52,7 @@ const ProjectsCard = ({ photo, name, knowMore }: Props) => {
           onHoverStart={handleProjectShow}
           onHoverEnd={handleProjectHide}
         >
-          <h2 className='lg:hidden text-krona-one text-gray-400 uppercase'>{name}</h2>
+          <h2 className='lg:hidden text-krona-one text-gray-400 uppercase text-gradient-blues'>{name}</h2>
           <Image className={`rounded-xl transition-all ease-in-out delay-75 h-[350px] object-cover ${projectHover ? 'brightness-50 shadow-white/20 shadow-md' : 'opacity-100'}`} src={photo} width={700} height={470} alt='project image' />
         </motion.div>
 

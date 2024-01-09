@@ -28,7 +28,7 @@ const Hero = (props: Props) => {
         width={32}
         height={32}
         alt={"uGabDev picture"}
-        className="relative rounded-full h-32 w-32 object-cover mx-auto"
+        className="relative rounded-full h-32 w-32 object-cover mx-auto "
       />
 
       <div className="z-20">
