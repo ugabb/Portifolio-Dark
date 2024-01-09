@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
-    words: ["Hi, my name is Gabriel", "Dev","Computer Science"],
+    words: ["Hi, my name is Gabriel", "Dev", "Computer Science"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -23,7 +23,7 @@ const Hero = (props: Props) => {
     <div className="h-screen flex flex-col space-y-8 item-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <motion.img
-      whileHover={{scale:1.1}}
+        whileHover={{ scale: 1.1 }}
         src="/me.png"
         width={32}
         height={32}
@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
           Developer
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold scroll-px-10">
-          <span className="mr-3 ">{text}</span>
+          <span className="mr-3">{text}</span>
           <Cursor cursorColor="#45c7e5" />
         </h1>
 

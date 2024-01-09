@@ -11,7 +11,7 @@ function HeaderSecondary({}: Props) {
 
 
   return (
-    <header className="sticky top-0 flex p-5 items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 flex p-5 items-start justify-between max-w-7xl mx-auto z-20 xl:items-center backdrop-blur-sm border-b border-blue-300 bg-gradient-to-r from-transparent via-blue-300/20 to-transparent z-50">
       <motion.div
         initial={{
           x: -500,
