@@ -2,9 +2,12 @@ import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import ContactMeInfo from "./ContactMeInfo";
 
 import { useForm, SubmitHandler } from "react-hook-form";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import emailjs from '@emailjs/browser';
+import { useToast } from "./ui/use-toast";
+import { ToastAction } from "./ui/toast";
+
 
 type Email = {
   name: string;
@@ -16,28 +19,35 @@ type Email = {
 type Props = {};
 
 const ContactMe = (props: Props) => {
-  const { register, handleSubmit } = useForm<Email>();
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<Email>();
+
+  const { toast } = useToast()
+
+  const [openToast, setOpenToast] = useState<boolean>(false);
   const form = useRef('')
 
   const onSubmit: SubmitHandler<Email> = (formData) => {
-
-    // window.location.href = `mailto:ugabrieldev@gmail.com?subject=${formData.subject}&body=Hi, my name is${formData.name}.${formData.message} (${formData.email})`
-
     emailjs
       .sendForm('service_9fpcwpc', 'template_il1yoen', form.current, '7JQbKxEuJzdHYC57W')
       .then(
         res => {
-          console.log(res.text)
-          if (res.text === 'OK') {
-            return (
-              <div className="absolute z-50 mx-auto top-0 left-0">
-                <p className="text-4xl text-emerald-500 ">Email Enviado com sucesso</p>
-              </div>
-            )
+          console.log(res.status)
+          if (res.status === 200) {
+            toast({
+              variant: "successfully",
+              title: "Email send successfully",
+              description: "Thank you for visiting!"
+            })
+            reset()
+          } else {
+            toast({
+              variant: "destructive",
+              title: "Something went wrong sending the email",
+              description: "Thank you for visiting!",
+              action: (<ToastAction altText="Pssou o mouse" onSubmit={handleSubmit(onSubmit)}>Try Again!</ToastAction>),
+            })
           }
-        },
-        (error) => console.log(error.text)
-      )
+        })
   };
 
 
@@ -76,19 +86,23 @@ const ContactMe = (props: Props) => {
 
         <form ref={form} onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit  mx-auto">
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-            <input {...register("name")} className="contactInput" placeholder="Name" type="text" />
-            <input {...register("email")} className="contactInput" placeholder="Email" type="text" />
-          </div>
-          <input {...register("subject")} className="contactInput" placeholder="Subject" type="text" />
+            <div className="flex flex-col gap-3">
 
-          <textarea {...register("message")} className="contactInput" placeholder="Message" />
+              <input {...register("name", { required: true })} className={`contactInput ${errors.name ? "border border-red-500" : ""}`} placeholder="Name" type="text" />
+            </div>
+            <input {...register("email", { required: true })} className={`contactInput ${errors.email ? "border border-red-500" : ""}`} placeholder="Email" type="text" />
+          </div>
+          <input {...register("subject", { required: true })} className={`contactInput ${errors.subject ? "border border-red-500" : ""}`} placeholder="Subject" type="text" />
+
+          <textarea {...register("message", { required: true })} className={`contactInput ${errors.message ? "border border-red-500" : ""}`} placeholder="Message" />
 
           <button
             type="submit"
-            className="bg-[#45c7e5] hover:text-white py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-sky-500 py-5 px-10 rounded-md text-white font-bold text-lg"
           >
             Submit
           </button>
+
         </form>
       </div>
     </div>
