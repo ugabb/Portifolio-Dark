@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
       <BackgroundCircles />
       <motion.img
       whileHover={{scale:1.1}}
-        src="/me.jpg"
+        src="/me.png"
         width={32}
         height={32}
         alt={"uGabDev picture"}
@@ -47,6 +47,9 @@ const Hero = (props: Props) => {
 
           <Link href="#projects">
             <button className="hero-button">Projects</button>
+          </Link>
+          <Link href="#timeline">
+            <button className="hero-button">Timeline</button>
           </Link>
           <Link href="#skills">
             <button className="hero-button">Skills</button>

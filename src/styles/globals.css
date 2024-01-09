@@ -9,6 +9,15 @@
   src: url('../fonts/wild-world/wild-world.otf');
 }
 
+.text-gradient {
+  background: #27A8CF;
+background: linear-gradient(to right, #27A8CF 0%, #2F1DCF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+
 .text-krona-one {
   font-family: 'Krona One', sans-serif;
 }
@@ -37,6 +46,7 @@
   overflow: hidden;
   border-radius: 16px;
 }
+
 /* 
  .project-border::before {
   content: '';

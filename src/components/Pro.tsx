@@ -39,7 +39,7 @@ const Projects = (props: Props) => {
               }}
               viewport={{ once: true }}
               className="w-64"
-              src="./me.jpg"
+              src="./me.png"
               alt=""
             />
 

@@ -41,7 +41,7 @@ export default function Home() {
         <Project />
       </section>
 
-      <section className="my-20">
+      <section className="my-20" id="timeline">
         <Timeline />
       </section>
 
