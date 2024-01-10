@@ -58,14 +58,14 @@ export default function Home() {
         <ContactMe />
       </section>
 
-      <Link href="#hero">
-        <motion.footer
-          initial={{ y: 0 }}
-          transition={{ ease: "easeOut", duration: 2 }}
-          animate={{ y: -30 }}
-          className="sticky bottom-5 cursor-pointer"
-        >
-          <div className="flex items-center justify-center">
+      <motion.footer
+        initial={{ y: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+        animate={{ y: -30 }}
+        className="sticky bottom-5"
+      >
+        <div className="flex items-center justify-center">
+          <Link href="#hero">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -80,9 +80,9 @@ export default function Home() {
                 d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
               />
             </svg>
-          </div>
-        </motion.footer>
-      </Link>
+          </Link>
+        </div>
+      </motion.footer>
     </div>
   );
 }

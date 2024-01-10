@@ -12,13 +12,13 @@
 
 .text-gradient-blues {
     background: #27A8CF;
-    background: linear-gradient(to right, #2cb933 0%, #065016 100%);
+    background: linear-gradient(to right, #00ccff 0%, #abbbae 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-greens {
-    background: linear-gradient(to right, #2cb933 0%, #065016 100%);
+    background: linear-gradient(to right, #2cb933 0%, #149931 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
