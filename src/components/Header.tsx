@@ -33,13 +33,13 @@ function Header({ }: Props) {
 
           <div className="flex gap-5">
             <Link href="https://www.linkedin.com/in/ugab/" target="_blank">
-              <RiLinkedinBoxFill className="icons" size={30} />
+              <RiLinkedinBoxFill className="icons text-xl lg:text-2xl" />
             </Link>
             <Link href="https://github.com/ugabb" target="_blank">
-              <AiFillGithub className="icons" size={30} />
+              <AiFillGithub className="icons text-xl lg:text-2xl" />
             </Link>
             <Link href="https://twitter.com/uGabDev" target="_blank">
-              <AiOutlineTwitter className="icons" size={30} />
+              <AiOutlineTwitter className="icons text-xl lg:text-2xl" />
             </Link>
           </div>
         </motion.div>
@@ -60,12 +60,7 @@ function Header({ }: Props) {
           }}
           className="flex flex-row items-center gap-3 text-gray-300 cursor-pointer"
         >
-          <Link
-            className="uppercase md:inline-flex text-sm text-gray-400 "
-            href="#contact"
-          >
-            <AiOutlineMail className="icons" size={20} />
-          </Link>
+          <Link href={'/Currículo - Gabriel Silva Barros - Desenvolvedor.pdf'} className="hover:text-sky-300 hover:underline transition-all ease-in-out" target="_blank">View Resume</Link>
         </motion.div>
       </div>
 

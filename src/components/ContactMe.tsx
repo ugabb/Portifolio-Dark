@@ -76,12 +76,6 @@ const ContactMe = (props: Props) => {
               <EnvelopeIcon className="text-[#45c7e5] h-7 w-7 animate-pulse" />
             }
           />
-          <ContactMeInfo
-            title="Brasília - DF"
-            icon={
-              <MapPinIcon className="text-[#45c7e5] h-7 w-7 animate-pulse" />
-            }
-          />
         </div>
 
         <form ref={form} onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit  mx-auto">
