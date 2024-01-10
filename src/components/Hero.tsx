@@ -42,23 +42,23 @@ const Hero = (props: Props) => {
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-3 pt-5">
           <Link href="#about">
-            <button className="hero-button">About</button>
+            <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">About</button>
           </Link>
 
           <Link href="#projects">
-            <button className="hero-button">Projects</button>
+            <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Projects</button>
           </Link>
           <Link href="#timeline">
-            <button className="hero-button">Timeline</button>
+            <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Timeline</button>
           </Link>
           <Link href="#skills">
-            <button className="hero-button">Skills</button>
+            <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Skills</button>
           </Link>
           {/* <Link href="#projects">
             <button className="hero-button">Projects</button>
           </Link> */}
           <Link href="#contact">
-            <button className="hero-button">Contact</button>
+            <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Contact</button>
           </Link>
         </div>
       </div>
