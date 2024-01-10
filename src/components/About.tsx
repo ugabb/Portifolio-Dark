@@ -22,7 +22,7 @@ const About = (props: Props) => {
         about
       </h3>
 
-      <div className="flex gap-5">
+      <div className="flex flex-col lg:flex-row gap-5">
         <motion.img
           initial={{
             x: -200,
@@ -44,12 +44,10 @@ const About = (props: Props) => {
           <p className="text-sm md:text-base lg:w-1/2">
             Hi, my name is{" "}
             <span className="underline decoration-[#45c7e5]/50">Gabriel</span>{" "}
-            Passionate for Programming and Design. Computer Science and Web
-            Development student.<br /> I like to craft solid and scalable frontend products with great user experiences.{" "}
+            Passionate for Programming and Design. Computer Science and Web.
           </p>
-          <p className="text-sm md:text-base lg:w-1/2">
-            I'm from Brazil🟡🟢 and my favorite team is Flamengo ⚫🔴{" "}. I have 21 years old of trying to let the world around me better
-          </p>
+          <li className="text-sm md:text-base lg:w-1/2">22 years old</li>
+
         </div>
       </div>
 
