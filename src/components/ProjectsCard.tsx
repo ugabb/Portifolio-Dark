@@ -8,7 +8,7 @@ import Link from 'next/link'
 type Props = {
   photo: string;
   name: string;
-  knowMore:string;
+  knowMore: string;
 }
 
 
@@ -31,7 +31,7 @@ const ProjectsCard = ({ photo, name, knowMore }: Props) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className='project-border center z-20'>
+          className='project-border center z-20 hidden lg:flex'>
           <div className="flex justify-center items-center gap-3 max-w-sm mx-auto">
             <img className='h-10 w-10' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' />
             <img className='h-10 w-10' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' />
@@ -46,6 +46,7 @@ const ProjectsCard = ({ photo, name, knowMore }: Props) => {
         </motion.div>
       )}
 
+
       <Link href={`/projects-details/${knowMore}`}>
 
         <motion.div
@@ -57,6 +58,12 @@ const ProjectsCard = ({ photo, name, knowMore }: Props) => {
         </motion.div>
 
       </Link >
+      <div className="flex justify-center items-center gap-3 max-w-sm mb-5 p-3 mx-auto lg:hidden">
+        <img className='h-8 w-8' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' />
+        <img className='h-8 w-8' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' />
+        <img className='h-8 w-8' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' />
+        <img className='h-8 w-8' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' />
+      </div>
     </motion.div>
   )
 }
