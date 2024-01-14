@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      listStyleType:{
+        mma:'url("/img/check.png")'
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

@@ -4,7 +4,8 @@ const nextConfig = {
   images: {
     domains: [
       'picsum.photos',
-      "yt3.googleusercontent.com"
+      "yt3.googleusercontent.com",
+      "www.alura.com.br"
     ]
   }
 }
