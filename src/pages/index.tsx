@@ -17,35 +17,34 @@ import Timeline from "@/components/Vertical Time Line/Timeline";
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(22,22,22)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#45c7e5]/80 scrollbar-thin">
+    <div className="flex flex-col  bg-[rgb(22,22,22)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#45c7e5]/80 scrollbar-thin">
       <Head>
         <title>uGab Portfolio  😁</title>
       </Head>
 
       <div className="hidden lg:block w-screen overflow-hidden">
-
         <Mouse />
       </div>
 
       <Header />
 
-      <section id="hero" >
+      <section className="mt-20 lg:mt-10"  id="hero" >
         <Hero />
       </section>
 
-      <section id="about">
+      <section className="mt-20 lg:mt-10"  id="about">
         <About />
       </section>
 
-      <section id="projects">
+      <section className="mt-40 lg:mt-10" id="projects">
         <Project />
       </section>
 
-      <section className="my-20" id="timeline">
+      <section className="mt-20 lg:mt-10" id="timeline">
         <Timeline />
       </section>
 
-      <section id="skills">
+      <section className="mt-40 lg:mt-10" id="skills">
         <Skills />
       </section>
 
@@ -54,7 +53,7 @@ export default function Home() {
       </section> */}
 
       {/* Contact Me */}
-      <section id="contact">
+      <section className="mt-60 lg:mt-10" id="contact">
         <ContactMe />
       </section>
 
