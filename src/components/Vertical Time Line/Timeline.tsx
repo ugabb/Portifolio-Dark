@@ -12,7 +12,7 @@ const Timeline = (props: Props) => {
     return (
         <VerticalTimeline>
             <VerticalTimelineElement
-                className="vertical-timeline-element--work "
+                className="vertical-timeline-element--work h-screen "
                 contentStyle={{ background: ' linear-gradient(45deg, #cbeecd 50%, #6af58d 100%)', color: '#e7e7e7' }}
                 contentArrowStyle={{ borderRight: '7px solid  #6af58d' }}
                 date="2023 - atual"

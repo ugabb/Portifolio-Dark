@@ -53,8 +53,8 @@ const ContactMe = (props: Props) => {
 
 
   return (
-    <div className="h-screen flex relative flex-col text-left md:flex-row max-w-7xl mx-auto px-10 justify-evenly items-center">
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className="h-screen flex  relative flex-col text-left  max-w-7xl mx-auto px-10 justify-evenly items-center">
+      <h3 className="top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
@@ -78,6 +78,7 @@ const ContactMe = (props: Props) => {
           />
         </div>
 
+        {/* @ts-ignore */}
         <form ref={form} onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit  mx-auto">
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
             <div className="flex flex-col gap-3">

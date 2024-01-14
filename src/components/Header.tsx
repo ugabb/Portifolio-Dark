@@ -11,7 +11,7 @@ function Header({ }: Props) {
 
 
   return (
-    <header className="sticky top-0 flex p-5 items-start justify-between  mx-auto  xl:items-center backdrop-blur-sm border-b border-blue-300 bg-gradient-to-r from-transparent via-blue-300/20 to-transparent z-50">
+    <header className="sticky top-0 flex p-5 items-start justify-between  mx-auto w-full  xl:items-center backdrop-blur-sm border-b border-blue-300 bg-gradient-to-r from-transparent via-blue-300/20 to-transparent z-50">
       <div className="flex justify-between max-w-7xl w-full mx-auto">
         <motion.div
           initial={{

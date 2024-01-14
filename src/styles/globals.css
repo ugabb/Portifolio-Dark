@@ -23,6 +23,18 @@
     -webkit-text-fill-color: transparent;
 }
 
+.text-gradient-reds {
+    background: linear-gradient(to right, #b92c67 0%, #8e1499 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-bw {
+    background: linear-gradient(to right, #5a595a 0%, #252525 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .text-krona-one {
     font-family: 'Krona One', sans-serif;
 }
@@ -70,6 +82,10 @@
   inset: 5px;
   border-radius: 16px;
 }  */
+
+.curved {
+    border-radius: 20% 80% 35% 65% / 53% 34% 66% 47%;
+}
 
 @keyframes rotate {
     from {
