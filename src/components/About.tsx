@@ -6,6 +6,12 @@ import { AiOutlineLoading } from "react-icons/ai";
 
 type Props = {};
 
+const carouselImg = [
+  "/inova-tech.jfif",
+  "/mma-team.jfif",
+  "/pmidf.jfif",
+]
+
 const About = (props: Props) => {
   return (
     <motion.div
@@ -60,130 +66,20 @@ const About = (props: Props) => {
             <li className="text-sm md:text-base list-disc list-inside  marker:text-blue-300">22 years old</li>
           </ul>
 
-          <Carousel className="lg:w-1/2 mx-auto">
-            <CarouselContent >
-              <CarouselItem>
-                <motion.img
-                  initial={{
-                    x: -200,
-                    opacity: 0,
-                  }}
-                  transition={{
-                    duration: 1.2,
-                  }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  viewport={{
-                    once: true,
-                  }}
-                  src={"/mma.jpg"}
-                  className=" w-full  object-cover rounded-lg"
-                />
-
-              </CarouselItem>
-              <CarouselItem>
-                <motion.img
-                  initial={{
-                    x: -200,
-                    opacity: 0,
-                  }}
-                  transition={{
-                    duration: 1.2,
-                  }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  viewport={{
-                    once: true,
-                  }}
-                  src={"/image-generator.png"}
-                  className="h-full object-cover rounded-lg"
-                />
-
-              </CarouselItem>
-              <CarouselItem>
-                <motion.img
-                  initial={{
-                    x: -200,
-                    opacity: 0,
-                  }}
-                  transition={{
-                    duration: 1.2,
-                  }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  viewport={{
-                    once: true,
-                  }}
-                  src={"/me.png"}
-                  className=" object-cover rounded-lg"
-                />
-
-              </CarouselItem>
+          <Carousel>
+            <CarouselContent className="mx-auto h-[400px]">
+              {carouselImg.map((img, i) => (
+                <CarouselItem key={i} >
+                  <motion.img
+                    src={img}
+                    className=" w-full h-full object-cover rounded-lg"
+                  />
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-
-
-          {/* <div className="grid grid-cols-2 gap-3 mx-auto w-[350px]">
-            <motion.img
-              initial={{
-                x: -200,
-                opacity: 0,
-              }}
-              transition={{
-                duration: 1.2,
-              }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{
-                once: true,
-              }}
-              src={"/me.png"}
-              className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-full md:h-full"
-            />
-            <motion.img
-              initial={{
-                x: -200,
-                opacity: 0,
-              }}
-              transition={{
-                duration: 1.2,
-              }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{
-                once: true,
-              }}
-              src={"/me.png"}
-              className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-full md:h-full"
-            />
-            <motion.img
-              initial={{
-                x: -200,
-                opacity: 0,
-              }}
-              transition={{
-                duration: 1.2,
-              }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{
-                once: true,
-              }}
-              src={"/me.png"}
-              className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-full md:h-full"
-            />
-            <motion.img
-              initial={{
-                x: -200,
-                opacity: 0,
-              }}
-              transition={{
-                duration: 1.2,
-              }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{
-                once: true,
-              }}
-              src={"/me.png"}
-              className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-full md:h-full"
-            />
-          </div> */}
         </div>
       </div>
 

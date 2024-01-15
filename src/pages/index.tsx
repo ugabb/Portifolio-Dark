@@ -28,23 +28,26 @@ export default function Home() {
 
       <Header />
 
-      <section className="mt-20 lg:mt-10"  id="hero" >
+      <section className="mt-20 lg:mt-10" id="hero" >
         <Hero />
       </section>
 
-      <section className="mt-20 lg:mt-10"  id="about">
+      <section className="mt-20 lg:mt-10" id="about">
         <About />
       </section>
 
-      <section className="mt-40 lg:mt-10" id="projects">
+      <section className="mt-20 lg:mt-10" id="projects">
         <Project />
       </section>
 
-      <section className="mt-20 lg:mt-10" id="timeline">
+      <section className="mt-20 flex flex-col justify-center items-center space-y-10" id="timeline">
+        <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
+          Timeline
+        </h3>
         <Timeline />
       </section>
 
-      <section className="mt-40 lg:mt-10" id="skills">
+      <section className="mt-10" id="skills">
         <Skills />
       </section>
 

@@ -18,13 +18,13 @@ const Project = (props: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col gap-5 text-left max-w-full px-10 justify-evenly mx-auto items-center lg:h-screen "
+      className="flex flex-col gap-5 text-left max-w-full px-10 justify-evenly mx-auto items-center lg:h-full"
     >
       <h3 className="uppercase tracking-[10px] text-gray-500 text-2xl z-30 ">
         Projects
       </h3>
 
-      <motion.div className="w-full lg:max-w-7xl h-2/3 flex flex-col gap-5 xl:grid xl:grid-cols-2 lg:gap-3 justify-center items-center">
+      <motion.div className="w-full lg:max-w-7xl  flex flex-col gap-5 md:grid md:grid-cols-2 lg:gap-3 justify-center items-center">
         {projects.map((project) => (
           <ProjectsCard project={project}/>
         ))}

@@ -11,7 +11,7 @@ const Mouse = (props: Props) => {
   return (
     <motion.div
       ref={ref}
-      className="z-50 absolute rounded-full pointer-events-none"
+      className="z-20 absolute rounded-full pointer-events-none"
       animate={{ x, y}}
       transition={{
         type: "spring",

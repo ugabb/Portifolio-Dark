@@ -52,29 +52,11 @@ const projects: IProject[] = [
         imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
     ],
-    repo:"",
+    repo: "",
     deploy: "https://geprod.mma.gov.br/homepage",
     more: "projects-details/Portifolio"
   },
-  {
-    name: "Twenty One Pilots",
-    photo: "/21pilots.png",
-    description:
-      "Landing Page about Twenty one Pilots",
-    technologies: [
-      {
-        name: "React",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "NodeJS",
-        imageUrl: "//cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      },
-    ],
-    repo: "https://github.com/ugabb/Twenty-One-Pilots-",
-    deploy:"https://twenty-one-pilots-uslv.vercel.app/",
-    more: "projects-details/ImageGenerator"
-  },
+
   {
     name: "Taugor employee management",
     photo: "/taugor-site.png",
@@ -108,6 +90,25 @@ const projects: IProject[] = [
     repo: "https://github.com/ugabb/taugor-gestao-de-funcionarios",
     deploy: "https://taugor-gestao-de-funcionarios.vercel.app/",
     more: "projects-details/TodoApp"
+  },
+  {
+    name: "Twenty One Pilots",
+    photo: "/21pilots.png",
+    description:
+      "Landing Page about Twenty one Pilots",
+    technologies: [
+      {
+        name: "React",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "NodeJS",
+        imageUrl: "//cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+    ],
+    repo: "https://github.com/ugabb/Twenty-One-Pilots-",
+    deploy: "https://twenty-one-pilots-uslv.vercel.app/",
+    more: "projects-details/ImageGenerator"
   },
 ];
 

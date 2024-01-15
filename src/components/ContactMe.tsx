@@ -54,7 +54,7 @@ const ContactMe = (props: Props) => {
 
   return (
     <div className="h-screen flex  relative flex-col text-left  max-w-7xl mx-auto px-10 justify-evenly items-center">
-      <h3 className="top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className=" uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
