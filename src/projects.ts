@@ -98,12 +98,16 @@ const projects: IProject[] = [
       "Landing Page about Twenty one Pilots",
     technologies: [
       {
-        name: "React",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        name: "HTML",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       },
       {
-        name: "NodeJS",
-        imageUrl: "//cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        name: "CSS",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "Bootstrap",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
       },
     ],
     repo: "https://github.com/ugabb/Twenty-One-Pilots-",
