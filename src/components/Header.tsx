@@ -60,7 +60,7 @@ function Header({ }: Props) {
           }}
           className="flex flex-row items-center gap-3 text-gray-300 cursor-pointer"
         >
-          <Link href={'/Currículo - Gabriel Silva Barros - Desenvolvedor.pdf'} className="hover:text-sky-300 hover:underline transition-all ease-in-out" target="_blank">View Resume</Link>
+          <Link href={'/Gabriel Silva Barros - Currilo- 2024.pdf'} className="hover:text-sky-300 hover:underline transition-all ease-in-out" target="_blank">View Resume</Link>
         </motion.div>
       </div>
 
