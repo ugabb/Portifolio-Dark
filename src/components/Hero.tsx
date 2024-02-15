@@ -45,11 +45,11 @@ const Hero = (props: Props) => {
             <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">About</button>
           </Link>
 
-          <Link href="#projects">
-            <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Projects</button>
-          </Link>
           <Link href="#timeline">
             <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Timeline</button>
+          </Link>
+          <Link href="#projects">
+            <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Projects</button>
           </Link>
           <Link href="#skills">
             <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Skills</button>

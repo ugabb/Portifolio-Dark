@@ -28,7 +28,7 @@ const Skills = (props: Props) => {
         <Skill title="Angular" icon="https://www.alura.com.br/artigos/assets/novidades-angular-17/imagem1.gif" directionLeft={true} />
         <Skill title="Spring Boot" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" directionLeft={false} />
         <Skill title="NodeJS" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" directionLeft={true} />
-        <Skill title="Tailwindcss" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" directionLeft={false} />
+        <Skill title="Tailwindcss" icon="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" directionLeft={false} />
         <Skill title="Saas" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" directionLeft={false} />
         <Skill title="HTML5" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" directionLeft={false} />
         <Skill title="Typescript" icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" directionLeft={true} />

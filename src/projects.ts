@@ -24,7 +24,7 @@ const projects: IProject[] = [
       },
       {
         name: "TailwindCSS",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       },
       {
         name: "PostgresSQL",
@@ -33,6 +33,40 @@ const projects: IProject[] = [
     ],
     repo: "https://github.com/ugabb/dev-spotlight",
     more: "TodoApp"
+  },
+  {
+    name: "Fintalk Chat", 
+    photo: "/chat.jpg",
+    description: "",
+    technologies: [
+      {
+        name: "Next.js",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "React",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "Typescript",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "TailwindCSS",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Prisma",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+      },
+      {
+        name: "MongoDB",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+      },
+    ],
+    repo: "https://github.com/ugabb/fintalk-chat",
+    deploy: "https://fintalk-chat.vercel.app/",
+    more: "projects-details/fintalk-chat"
   },
   {
     name: "Geprod",
@@ -56,7 +90,6 @@ const projects: IProject[] = [
     deploy: "https://geprod.mma.gov.br/homepage",
     more: "projects-details/Portifolio"
   },
-
   {
     name: "Taugor employee management",
     photo: "/taugor-site.png",
@@ -84,7 +117,7 @@ const projects: IProject[] = [
       },
       {
         name: "TailwindCSS",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       },
     ],
     repo: "https://github.com/ugabb/taugor-gestao-de-funcionarios",
