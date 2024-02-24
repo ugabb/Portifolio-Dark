@@ -102,7 +102,7 @@ const Timeline = (props: Props) => {
                         {/* Tailwind tooltip */}
                         <Tooltip>
                             <TooltipTrigger asChild className='cursor-pointer'>
-                                <Image width={30} height={30} alt='React' src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'} />
+                                <Image width={30} height={30} alt='React' src={'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'} />
                             </TooltipTrigger>
                             <TooltipContent className='text-white bg-blue-500 border-none'>
                                 TailwindCSS
