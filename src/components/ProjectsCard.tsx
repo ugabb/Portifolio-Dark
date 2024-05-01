@@ -82,7 +82,7 @@ const ProjectsCard = ({ project }: Props) => {
 
               <div className="flex items-center justify-between  absolute bottom-0 w-full">
                 <Link href={project.deploy ? project.deploy : ""} target='_blank' className='w-full'>
-                  <Button className={` w-full bg-neutral-900 text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none ${project.repo ? 'rounded-l-lg' : 'rounded-lg'} flex items-center gap-1`}>
+                  <Button className={` w-full bg-transparent text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none ${project.repo ? 'rounded-l-lg' : 'rounded-lg'} flex items-center gap-1`}>
                     Deploy
                     <PiArrowSquareOut size={15} />
                   </Button>
@@ -90,7 +90,7 @@ const ProjectsCard = ({ project }: Props) => {
                 {project.repo && (
 
                   <Link href={project.repo} target='_blank' className='w-full'>
-                    <Button className=' w-full bg-neutral-900 text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none rounded-r-lg flex items-center gap-1'>
+                    <Button className=' w-full bg-transparent text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none rounded-r-lg flex items-center gap-1'>
                       GitHub
                       <FaGithub size={15} />
                     </Button>
@@ -107,7 +107,7 @@ const ProjectsCard = ({ project }: Props) => {
 
       <div className="flex items-center justify-between w-full">
         <Link href={project.deploy ? project.deploy : ""} target='_blank' className='w-full'>
-          <Button className={` w-full bg-neutral-900 text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none ${project.repo ? 'rounded-bl-lg' : 'rounded-b-lg'} flex items-center gap-1`}>
+          <Button className={` w-full bg-transparent text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none ${project.repo ? 'rounded-bl-lg' : 'rounded-b-lg'} flex items-center gap-1`}>
             Deploy
             <PiArrowSquareOut size={15} />
           </Button>
@@ -115,7 +115,7 @@ const ProjectsCard = ({ project }: Props) => {
         {project.repo && (
 
           <Link href={project.repo} target='_blank' className='w-full'>
-            <Button className=' w-full bg-neutral-900 text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none rounded-br-lg flex items-center gap-1'>
+            <Button className=' w-full bg-transparent text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none rounded-br-lg flex items-center gap-1'>
               GitHub
               <FaGithub size={15} />
             </Button>

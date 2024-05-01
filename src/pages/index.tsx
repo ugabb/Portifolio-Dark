@@ -18,7 +18,7 @@ import { BackgroundGradientAnimation } from "@/components/aceternity/background-
 
 export default function Home() {
   return (
-    <div className="flex flex-col  bg-[rgb(22,22,22)] text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#45c7e5]/80 scrollbar-thin">
+    <div className="flex flex-col  bg-gradient-to-t from-black to-gray-900 text-white h-screen snap-y snap-mandatory scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400/20 scrollbar-thumb-[#45c7e5]/80 scrollbar-thin">
       <Head>
         <title>uGab Portfolio  😁</title>
       </Head>
