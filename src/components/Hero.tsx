@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
       <BackgroundCircles />
       <motion.img
         whileHover={{ scale: 1.1 }}
-        src="/me.png"
+        src="/me-blue-border.jpeg"
         width={32}
         height={32}
         alt={"uGabDev picture"}
@@ -41,9 +41,9 @@ const Hero = (props: Props) => {
         </h1>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-3 pt-5">
-          <Link href="#about">
+          {/* <Link href="#about">
             <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">About</button>
-          </Link>
+          </Link> */}
 
           <Link href="#timeline">
             <button className="hero-button hover:bg-gradient-to-r hover:from-transparent hover:via-blue-300/10 hover:to-transparent">Timeline</button>

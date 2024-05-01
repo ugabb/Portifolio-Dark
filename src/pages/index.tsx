@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import Mouse from "@/components/Mouse";
 import { usePathname } from "next/navigation";
 import Timeline from "@/components/Vertical Time Line/Timeline";
+import { BackgroundGradientAnimation } from "@/components/aceternity/background-gradient-animation";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <Head>
         <title>uGab Portfolio  😁</title>
       </Head>
+
+
 
       <div className="hidden lg:block w-screen overflow-hidden">
         <Mouse />
@@ -31,10 +34,10 @@ export default function Home() {
       <section className="mt-20 lg:mt-10" id="hero" >
         <Hero />
       </section>
-
+      {/* 
       <section className="mt-20 lg:mt-10" id="about">
         <About />
-      </section>
+      </section> */}
 
       <section className="mt-20 flex flex-col justify-center items-center space-y-10" id="timeline">
         <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
@@ -50,6 +53,7 @@ export default function Home() {
       <section className="mt-10" id="skills">
         <Skills />
       </section>
+
 
       {/* <section className="snap-center" id="projects">
         <Projects />

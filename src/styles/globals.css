@@ -60,6 +60,9 @@
     font-family: 'Wild World', sans-serif;
 }
 
+.cursos-zoon-in-important{
+    cursor: zoom-in !important;
+}
 
 .center {
     position: absolute;

@@ -32,12 +32,13 @@ const projects: IProject[] = [
       },
     ],
     repo: "https://github.com/ugabb/dev-spotlight",
+    deploy: "https://dev-spotlight-nine.vercel.app/",
     more: "TodoApp"
   },
   {
-    name: "Fintalk Chat", 
-    photo: "/chat.jpg",
-    description: "",
+    name: "Connect Chat", 
+    photo: "/connect-chat.png",
+    description: "Real time chat application with rooms and private messages.",
     technologies: [
       {
         name: "Next.js",
@@ -64,8 +65,8 @@ const projects: IProject[] = [
         imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
       },
     ],
-    repo: "https://github.com/ugabb/fintalk-chat",
-    deploy: "https://fintalk-chat.vercel.app/",
+    repo: "https://github.com/ugabb/connect-chat",
+    deploy: "https://connect-chats.vercel.app/",
     more: "projects-details/fintalk-chat"
   },
   {
@@ -89,40 +90,6 @@ const projects: IProject[] = [
     repo: "",
     deploy: "https://geprod.mma.gov.br/homepage",
     more: "projects-details/Portifolio"
-  },
-  {
-    name: "Taugor employee management",
-    photo: "/taugor-site.png",
-    description: "",
-    technologies: [
-      {
-        name: "Next.js",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "React",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "NodeJS",
-        imageUrl: "//cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      },
-      {
-        name: "Express",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-      },
-      {
-        name: "Typescript",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      },
-      {
-        name: "TailwindCSS",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-    ],
-    repo: "https://github.com/ugabb/taugor-gestao-de-funcionarios",
-    deploy: "https://taugor-gestao-de-funcionarios.vercel.app/",
-    more: "projects-details/TodoApp"
   },
   {
     name: "Twenty One Pilots",
