@@ -73,9 +73,9 @@ const ProjectsCard = ({ project }: Props) => {
             {/* if there is a button in form, it will close the modal */}
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
           </form>
-          <div className='flex gap-3 w-full'>
-            <Image className={`rounded-lg transition-all ease-in-out delay-75 w-2/3 object-cover ${projectHover ? 'brightness-50 ' : 'opacity-100'}`} src={project.photo} width={2000} height={2000} alt='project image' />
-            <div className="flex flex-col gap-3 relative w-full">
+          <div className='flex flex-col lg:flex-row gap-3 w-full '>
+            <Image className={`rounded-lg transition-all ease-in-out delay-75 w-full lg:w-2/3 object-cover ${projectHover ? 'brightness-50 ' : 'opacity-100'}`} src={project.photo} width={2000} height={2000} alt='project image' />
+            <div className="lg:flex flex-col gap-3 relative w-full hidden">
               <h1 className='text-4xl font-bold text-neutral-400'>{project.name}</h1>
               <p className='text-neutral-400'>{project?.description}</p>
 
