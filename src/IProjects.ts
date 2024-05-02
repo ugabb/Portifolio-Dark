@@ -1,7 +1,7 @@
 export interface IProject {
     name: string;
     photo: string;
-    description: string;
+    description: string[];
     technologies: ITechnologies[];
     repo: string;
     deploy?: string;

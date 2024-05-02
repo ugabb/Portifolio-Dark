@@ -51,12 +51,12 @@ const ProjectsCard = ({ project }: Props) => {
 
         </motion.div>
       )}
-      {projectHover && (
+      {/* {projectHover && (
         <Link onMouseEnter={handleProjectShow}
           onMouseLeave={handleProjectHide} className={`absolute top-3 right-3 text-6xl hover:text-blue-300 z-50 `} href={project.repo} hidden={!project.repo} target='_blank'>
           <AiFillGithub />
         </Link>
-      )}
+      )} */}
 
 
       <motion.div
@@ -64,7 +64,7 @@ const ProjectsCard = ({ project }: Props) => {
         onMouseLeave={handleProjectHide}
       >
         <h2 className='lg:hidden text-krona-one text-gray-400 uppercase text-gradient-blues'>{project?.name}</h2>
-        <Image className={`rounded-t-lgtransition-all ease-in-out delay-75 h-[350px] object-cover ${projectHover ? 'brightness-50 ' : 'opacity-100'}`} src={project.photo} width={700} height={470} alt='project image' onClick={() => (document.getElementById(project.name) as HTMLDialogElement).showModal()} />
+        <Image className={`rounded-t-lg transition-all ease-in-out delay-75 h-[350px] cursor-pointer object-cover ${projectHover ? 'brightness-50 ' : 'opacity-100'}`} src={project.photo} width={700} height={470} alt='project image' onClick={() => (document.getElementById(project.name) as HTMLDialogElement).showModal()} />
       </motion.div>
 
       <dialog id={project.name} className="modal">
@@ -77,10 +77,22 @@ const ProjectsCard = ({ project }: Props) => {
             <Image className={`rounded-lg transition-all ease-in-out delay-75 w-full lg:w-2/3 object-cover ${projectHover ? 'brightness-50 ' : 'opacity-100'}`} src={project.photo} width={2000} height={2000} alt='project image' />
             <div className="lg:flex flex-col gap-3 relative w-full hidden">
               <h1 className='text-4xl font-bold text-neutral-400'>{project.name}</h1>
-              <p className='text-neutral-400'>{project?.description}</p>
+              <div className="flex flex-col gap-3 overflow-y-scroll h-[390px]">
+                {project.description.length > 0 && project.description.map((desc, index) => (
+                  <p className='text-neutral-400' key={index}>{desc}</p>
+                ))}
+                <div className="flex justify-center items-center gap-3 max-w-sm p-3 mx-auto">
+                  {project.technologies.map(tech => (
+                    <div className="flex flex-col gap-1 items-center" key={tech.name}>
+                      <Image width={1920} height={1080} alt={tech.name} className='h-8 w-8' src={tech.imageUrl} />
+                      <p className='text-xs text-neutral-400'>{tech.name}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
 
-              <div className="flex items-center justify-between  absolute bottom-0 w-full">
+              <div className="flex items-center justify-between absolute bottom-0 w-full">
                 <Link href={project.deploy ? project.deploy : ""} target='_blank' className='w-full'>
                   <Button className={` w-full bg-transparent text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none ${project.repo ? 'rounded-l-lg' : 'rounded-lg'} flex items-center gap-1`}>
                     Deploy
