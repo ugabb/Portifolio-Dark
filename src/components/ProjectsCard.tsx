@@ -92,7 +92,7 @@ const ProjectsCard = ({ project }: Props) => {
               </div>
 
 
-              <div className="flex items-center justify-between absolute bottom-0 w-full">
+              <div className="flex items-center justify-between absolute bottom-0 w-full backdrop-blur-sm">
                 <Link href={project.deploy ? project.deploy : ""} target='_blank' className='w-full'>
                   <Button className={` w-full bg-transparent text-neutral-400 hover:bg-gradient-to-r from-sky-400 to-cyan-200 hover:text-neutral-100 rounded-none ${project.repo ? 'rounded-l-lg' : 'rounded-lg'} flex items-center gap-1`}>
                     Deploy
