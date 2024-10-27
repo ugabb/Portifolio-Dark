@@ -59,11 +59,6 @@ export default function Home() {
         <Projects />
       </section> */}
 
-      {/* Contact Me */}
-      {/* <section className="mt-60 lg:mt-10" id="contact">
-        <ContactMe />
-      </section> */}
-
       <motion.footer
         initial={{ y: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
