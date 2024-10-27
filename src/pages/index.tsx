@@ -7,7 +7,6 @@ import Hero from "@/components/Hero";
 import Project from "@/components/Project";
 import Skills from "@/components/Skills";
 // import Projects from "components/Projects";
-import ContactMe from "@/components/ContactMe";
 
 //motion
 import { motion } from "framer-motion";
