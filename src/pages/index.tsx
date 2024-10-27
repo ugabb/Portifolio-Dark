@@ -60,9 +60,9 @@ export default function Home() {
       </section> */}
 
       {/* Contact Me */}
-      <section className="mt-60 lg:mt-10" id="contact">
+      {/* <section className="mt-60 lg:mt-10" id="contact">
         <ContactMe />
-      </section>
+      </section> */}
 
       <motion.footer
         initial={{ y: 0 }}
